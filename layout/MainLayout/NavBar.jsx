@@ -3,12 +3,12 @@ import React, { useEffect, useRef, useState } from "react";
 import IndexPage from "./IndexPage";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
+// import { useRouter } from "next/router";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const hiddenRef = useRef(null);
   const location = { pathname: "" };
-
   // Intersection Observer to change navbar style on scroll
   useEffect(() => {
     const navRef = hiddenRef.current;

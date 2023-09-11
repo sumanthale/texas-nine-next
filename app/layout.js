@@ -28,3 +28,13 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+export async function generateMetadata() {
+  const response = await fetch(
+    "https://texas-golf-center-default-rtdb.firebaseio.com/meta.json",
+    {
+      cache: "no-cache",
+    }
+  );
+  const data = await response.json();
+  return data;
+}
