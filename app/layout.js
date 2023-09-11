@@ -4,8 +4,6 @@ import "slick-carousel/slick/slick.css";
 // Import CSS styles
 import NavBar from "@/layout/MainLayout/NavBar";
 import BottomFoot from "@/components/Reusable/BottomFoot";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "@/firebase";
 
 export default function RootLayout({ children }) {
   return (
@@ -29,12 +27,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
-export async function generateMetadata() {
-  const docRef = doc(db, "content", "ID");
-
-  const docSnap = await getDoc(docRef);
-  console.log(docSnap.data());
-  const { metaTitle: title, metaDescription: description } = docSnap.data();
-  return { title, description };
 }
