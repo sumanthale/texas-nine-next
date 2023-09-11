@@ -6,7 +6,10 @@ import NavBar from "@/layout/MainLayout/NavBar";
 import BottomFoot from "@/components/Reusable/BottomFoot";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/firebase";
-
+export const metadata = {
+  title: "Texas Nine",
+  description: "Texas Nine Description",
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
