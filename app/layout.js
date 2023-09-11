@@ -34,6 +34,7 @@ export async function generateMetadata() {
   const docRef = doc(db, "content", "ID");
 
   const docSnap = await getDoc(docRef);
+  console.log(docSnap.data());
   const {
     metaTitle: title,
     metaDescription: description,
