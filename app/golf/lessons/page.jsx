@@ -49,21 +49,21 @@ const Lessons = () => {
                   className="w-full carousel-image-item h-96 bg-cover bg-center"
                   title="Lessons 1"
                   style={{
-                    backgroundImage: `url(${"/golf/lessons1.png"})`,
+                    backgroundImage: `url(${Lessons1.src})`,
                   }}
                 ></div>
                 <div
                   className="w-full carousel-image-item h-96 bg-cover bg-center"
                   title="Lessons 2"
                   style={{
-                    backgroundImage: `url(${"/golf/lessons2.png"})`,
+                    backgroundImage: `url(${Lessons2.src})`,
                   }}
                 ></div>
                 <div
                   className="w-full carousel-image-item h-96 bg-cover bg-center"
                   title="Lessons 3"
                   style={{
-                    backgroundImage: `url(${"/golf/lessons3.png"})`,
+                    backgroundImage: `url(${Lessons3.src})`,
                   }}
                 ></div>
               </Carousel>
@@ -89,7 +89,7 @@ const Lessons = () => {
 
               {/* Instructor image */}
               <img
-                src={Instructor}
+                src={Instructor.src}
                 alt="Instructor"
                 className="object-contain my-4"
                 style={{ width: "100%", height: "auto", maxHeight: "350px" }}
@@ -141,21 +141,21 @@ const Lessons = () => {
                   className="w-full carousel-image-item h-96 bg-cover bg-center"
                   title="Lessons 1"
                   style={{
-                    backgroundImage: `url(${"/golf/lessons1.png"})`,
+                    backgroundImage: `url(${Lessons1.src})`,
                   }}
                 ></div>
                 <div
                   className="w-full carousel-image-item h-96 bg-cover bg-center"
                   title="Lessons 2"
                   style={{
-                    backgroundImage: `url(${"/golf/lessons2.png"})`,
+                    backgroundImage: `url(${Lessons2.src})`,
                   }}
                 ></div>
                 <div
                   className="w-full carousel-image-item h-96 bg-cover bg-center"
                   title="Lessons 3"
                   style={{
-                    backgroundImage: `url(${"/golf/lessons3.png"})`,
+                    backgroundImage: `url(${Lessons3.src})`,
                   }}
                 ></div>
               </Carousel>
