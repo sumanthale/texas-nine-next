@@ -6,10 +6,7 @@ import NavBar from "@/layout/MainLayout/NavBar";
 import BottomFoot from "@/components/Reusable/BottomFoot";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/firebase";
-export const metadata = {
-  title: "Texas Nine",
-  description: "Texas Nine Description",
-};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -38,10 +35,6 @@ export async function generateMetadata() {
 
   const docSnap = await getDoc(docRef);
   console.log(docSnap.data());
-  const {
-    metaTitle: title,
-    metaDescription: description,
-    metaIcon: favicon,
-  } = docSnap.data();
-  return { title, description, favicon };
+  const { metaTitle: title, metaDescription: description } = docSnap.data();
+  return { title, description };
 }
