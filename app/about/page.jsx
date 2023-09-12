@@ -39,7 +39,7 @@ const AboutView = () => {
                 Meet The Team
               </h2>
             </div>
-            <div className="flex justify-between flex-col md:flex-row w-full gap-y-4 px-6 lg:px-16">
+            <div className="flex justify-between flex-col md:flex-row w-full gap-y-4 px-6 max-w-[90vw] ">
               {/* Display information about team members */}
               <div className="flex flex-col items-center space-x-4">
                 <img
