@@ -8,9 +8,23 @@ import Training from "../../public/golf/training.png";
 import Link from "next/link";
 import MiniHeader from "@/layout/MainLayout/MiniHeader";
 import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
 
 // Define the Fitness functional component
 const Fitness = () => {
+  const settings = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    initialSlide: 0,
+    cssEase: "linear",
+    arrows: false,
+  };
   return (
     <>
       {/* Render a MiniHeader component with heading */}
@@ -35,39 +49,25 @@ const Fitness = () => {
             </p>
 
             {/* Image carousel */}
-            <div className="py-4 lg:pr-0 ">
-              <Carousel
-                autoPlay
-                infiniteLoop
-                swipeable={false}
-                showArrows={false}
-                showStatus={false}
-                showThumbs={false}
-                showIndicators={false}
-                interval={10000}
-                stopOnHover={false}
-                className="carousel max-h-[100%] max-w-[60%] mx-auto"
-              >
-                {/* Individual carousel items */}
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${"/golf/fitness1.png"})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${"/golf/fitness2.png"})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${"/golf/fitness3.png"})`,
-                  }}
-                ></div>
-              </Carousel>
+
+            <div className="py-4 pr-4 lg:pr-0 ">
+              <Slider {...settings} className="carousel">
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Fitness1.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Fitness2.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Fitness3.src}
+                  alt="imagew"
+                />
+              </Slider>
             </div>
           </div>
 
@@ -130,39 +130,25 @@ const Fitness = () => {
             </p>
 
             {/* Image carousel */}
+
             <div className="py-4 pr-4 lg:pr-0 ">
-              <Carousel
-                autoPlay
-                infiniteLoop
-                swipeable={false}
-                showArrows={false}
-                showStatus={false}
-                showThumbs={false}
-                showIndicators={false}
-                interval={10000}
-                stopOnHover={false}
-                className="carousel max-h-[100%] max-w-[60%] mx-auto"
-              >
-                {/* Individual carousel items */}
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${"/golf/fitness1.png"})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${"/golf/fitness2.png"})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${"/golf/fitness3.png"})`,
-                  }}
-                ></div>
-              </Carousel>
+              <Slider {...settings} className="carousel">
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Fitness1.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Fitness2.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Fitness3.src}
+                  alt="imagew"
+                />
+              </Slider>
             </div>
           </div>
 

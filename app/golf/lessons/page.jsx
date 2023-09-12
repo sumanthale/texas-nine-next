@@ -7,8 +7,22 @@ import Lessons3 from "../../../public/golf/lessons3.png";
 import Instructor from "../../../public/golf/golf-instructor.jpg";
 import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
 
 const Lessons = () => {
+  const settings = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    initialSlide: 0,
+    cssEase: "linear",
+    arrows: false,
+  };
   return (
     <div>
       <MiniHeader heading={"Lessons"} />
@@ -31,42 +45,23 @@ const Lessons = () => {
 
             {/* Image carousel */}
             <div className="py-4 pr-4 lg:pr-0 ">
-              <Carousel
-                autoPlay
-                infiniteLoop
-                swipeable={false}
-                showArrows={false}
-                showStatus={false}
-                showThumbs={false}
-                showIndicators={false}
-                interval={10000}
-                stopOnHover={false}
-                className="carousel"
-                style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
-              >
-                {/* Carousel images */}
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  title="Lessons 1"
-                  style={{
-                    backgroundImage: `url(${Lessons1.src})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  title="Lessons 2"
-                  style={{
-                    backgroundImage: `url(${Lessons2.src})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  title="Lessons 3"
-                  style={{
-                    backgroundImage: `url(${Lessons3.src})`,
-                  }}
-                ></div>
-              </Carousel>
+              <Slider {...settings} className="carousel">
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Lessons1.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Lessons2.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Lessons3.src}
+                  alt="imagew"
+                />
+              </Slider>
             </div>
           </div>
 
@@ -122,43 +117,25 @@ const Lessons = () => {
             </p>
 
             {/* Image carousel */}
+
             <div className="py-4 pr-4 lg:pr-0 ">
-              <Carousel
-                autoPlay
-                infiniteLoop
-                swipeable={false}
-                showArrows={false}
-                showStatus={false}
-                showThumbs={false}
-                showIndicators={false}
-                interval={10000}
-                stopOnHover={false}
-                className="carousel"
-                style={{ maxHeight: "100%", maxWidth: "60%", margin: "0 auto" }}
-              >
-                {/* Carousel images */}
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  title="Lessons 1"
-                  style={{
-                    backgroundImage: `url(${Lessons1.src})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  title="Lessons 2"
-                  style={{
-                    backgroundImage: `url(${Lessons2.src})`,
-                  }}
-                ></div>
-                <div
-                  className="w-full carousel-image-item h-96 bg-cover bg-center"
-                  title="Lessons 3"
-                  style={{
-                    backgroundImage: `url(${Lessons3.src})`,
-                  }}
-                ></div>
-              </Carousel>
+              <Slider {...settings} className="carousel">
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Lessons1.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Lessons2.src}
+                  alt="imagew"
+                />
+                <img
+                  className="w-full carousel-image-item h-96  object-cover"
+                  src={Lessons3.src}
+                  alt="imagew"
+                />
+              </Slider>
             </div>
           </div>
 

@@ -3,8 +3,8 @@ import React from "react";
 // import Header from "@/layout/MainLayout/Header";
 import HomeCards from "@/components/Reusable/HomeCards";
 import HomeDiv2 from "@/components/Reusable/HomeDiv2";
-import ContactForm from "@/components/Home/ContactFormShort";
 import Header from "@/layout/MainLayout/Header";
+import ContactForm from "./ContactForm";
 
 // Define the Home component as a functional component
 

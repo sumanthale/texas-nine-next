@@ -7,7 +7,7 @@ import Golf3 from "../../public/golf/golf-3.png";
 import GolfBallPattern from "../../public/golf/golfballpattern.png";
 import Link from "next/link";
 import MiniHeader from "@/layout/MainLayout/MiniHeader";
-import ContactForm from "@/components/Home/ContactFormShort";
+import ContactFormShort from "@/components/Home/ContactForm";
 
 // Define the Golf component
 const Golf = () => {
@@ -56,7 +56,7 @@ const Golf = () => {
 
             <button className="uppercase outline outline-1 px-2 text-maroon text-xl tracking-wider outline-[#791214]">
               <Link
-                href="/tee-times"
+                href="/golf/memberships"
                 className="block w-full h-full font-GBook"
               >
                 PLAY MORE SAVE MORE WITH A MEMBERSHIP
@@ -65,7 +65,7 @@ const Golf = () => {
 
             <button className="uppercase outline outline-1 px-2 text-violet text-xl tracking-wider outline-[#172649]">
               <Link
-                href="/tee-times"
+                href="/golf/lessons"
                 className="block w-full h-full font-GBook"
               >
                 BOOK A PRIVATE LESSON
@@ -83,7 +83,7 @@ const Golf = () => {
             </button>
             <button className="uppercase  outline outline-1 px-2 text-maroon text-2xl tracking-wider outline-[#791214]">
               <Link
-                href="/tee-times"
+                href="/golf/memberships"
                 className="block w-full h-full font-GBook"
               >
                 PLAY MORE <br />
@@ -92,7 +92,7 @@ const Golf = () => {
             </button>
             <button className="uppercase  outline outline-1 px-2 text-violet text-2xl tracking-wider outline-[#172649]">
               <Link
-                href="/tee-times"
+                href="/golf/lessons"
                 className="block w-full h-full font-GBook"
               >
                 BOOK A <br /> PRIVATE LESSON
@@ -152,7 +152,7 @@ const Golf = () => {
       </div>
 
       {/* Render the ContactForm and Footer components */}
-      <ContactForm header={"HAVE QUESTIONS?"} />
+      <ContactFormShort header={"HAVE QUESTIONS?"} />
     </>
   );
 };

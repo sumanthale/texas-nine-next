@@ -2,9 +2,9 @@
 import { HiLocationMarker } from "react-icons/hi";
 import { BiAlarm, BiPhone } from "react-icons/bi";
 import { BsMailbox } from "react-icons/bs";
-import ContactForm from "@/components/Home/ContactFormShort";
 import BottomFoot from "@/components/Reusable/BottomFoot";
 import MiniHeader from "@/layout/MainLayout/MiniHeader";
+import ContactForm from "@/components/Home/ContactForm";
 
 // Define the Contact functional component
 const Contact = () => {

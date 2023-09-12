@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const ContactForm = ({ header }) => {
+const ContactFormShort = ({ header }) => {
   const nameRef = useRef(null);
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
@@ -95,10 +95,10 @@ const ContactForm = ({ header }) => {
                 <option value="Topic" defaultValue disabled hidden>
                   TOPIC
                 </option>
-                <option value="Job Interest">Golf</option>
-                <option value="Feedback">Memberships</option>
-                <option value="Other">Events Rentals</option>
-                <option value="Other">Other</option>
+                <option value="GOLF">GOLF</option>
+                <option value="MEMBERSHIP">MEMBERSHIP</option>
+                <option value="EVENTS RENTALS">EVENTS RENTALS</option>
+                <option value="OTHER">OTHER</option>
               </select>
               <textarea
                 className="col-span-1 bg-transparent outline outline-1 outline-white mb-2 w-full  rounded-sm p-3  caret-black md:col-span-2
@@ -132,4 +132,4 @@ const ContactForm = ({ header }) => {
   );
 };
 
-export default ContactForm;
+export default ContactFormShort;

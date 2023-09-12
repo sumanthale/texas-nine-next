@@ -7,6 +7,7 @@ import Smallgallery1 from "../../public/golf/smallgallery1.png";
 import Smallgallery2 from "../../public/golf/smallgallery2.png";
 import Smallgallery3 from "../../public/golf/smallgallery3.png";
 import Smallgallery4 from "../../public/golf/smallgallery4.png";
+import Smallgallery5 from "../../public/golf/smallgallery5.png";
 import Slider from "react-slick";
 const HomeDiv2 = () => {
   const reviews = [
@@ -106,33 +107,30 @@ const HomeDiv2 = () => {
             </div>
             <div className="h-full w-full col-span-1 ">
               <Slider {...settings} className="carousel">
-                <Image
-                  className="w-full carousel-image-item h-80  object-cover"
+                <img
+                  className="w-full carousel-image-item h-80  object-contain"
                   src={Smallgallery1.src}
                   alt="imagew"
-                  height={320}
-                  width={100}
                 />
-                <Image
-                  className="w-full carousel-image-item h-80  object-cover"
+                <img
+                  className="w-full carousel-image-item h-80  object-contain"
                   src={Smallgallery2.src}
                   alt="imagew"
-                  height={320}
-                  width={100}
                 />
-                <Image
-                  className="w-full carousel-image-item h-80  object-cover"
+                <img
+                  className="w-full carousel-image-item h-80  object-contain"
                   src={Smallgallery3.src}
                   alt="imagew"
-                  height={320}
-                  width={100}
                 />
-                <Image
-                  className="w-full carousel-image-item h-80  object-cover"
+                <img
+                  className="w-full carousel-image-item h-80  object-contain"
                   src={Smallgallery4.src}
                   alt="imagew"
-                  height={320}
-                  width={100}
+                />
+                <img
+                  className="w-full carousel-image-item h-80  object-contain"
+                  src={Smallgallery5.src}
+                  alt="imagew"
                 />
               </Slider>
             </div>

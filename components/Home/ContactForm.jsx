@@ -1,8 +1,9 @@
+"use client";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 // Define a functional component named ContactFormShort that takes a prop called 'header'
-const ContactFormShort = ({ header }) => {
+const ContactForm = ({ header }) => {
   // Create references for input elements using useRef
   const nameRef = useRef(null);
   const phoneRef = useRef(null);
@@ -108,7 +109,7 @@ const ContactFormShort = ({ header }) => {
             </a>
           </div>
         </div>
-        <div className="ml-auto p-4 col-span-2 lg:w-[90%]">
+        <div className="ml-0 lg:ml-auto p-4 col-span-2 lg:w-[90%]">
           <form
             // Handle form submission on form submit
             onSubmit={handleSubmit}
@@ -158,13 +159,13 @@ const ContactFormShort = ({ header }) => {
                 placeholder="TOPIC"
                 ref={subjectRef}
               >
-                <option value="Topic" defaultValue disabled hidden>
+                <option value="Topic" selected disabled hidden>
                   TOPIC
                 </option>
-                <option value="Job Interest">Golf</option>
-                <option value="Feedback">Memberships</option>
-                <option value="Other">Events Rentals</option>
-                <option value="Other">Other</option>
+                <option value="GOLF">GOLF</option>
+                <option value="MEMBERSHIP">MEMBERSHIP</option>
+                <option value="EVENTS RENTALS">EVENTS RENTALS</option>
+                <option value="OTHER">OTHER</option>
               </select>
               <textarea
                 // Textarea for message
@@ -199,4 +200,4 @@ const ContactFormShort = ({ header }) => {
   );
 };
 
-export default ContactFormShort;
+export default ContactForm;

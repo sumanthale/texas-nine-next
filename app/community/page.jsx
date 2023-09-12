@@ -10,7 +10,7 @@ import KJCFLOGO from "../../public/golf/KJCF-logo.png";
 import YOCLOGO from "../../public/golf/YOC-logo.png";
 import MiniHeader from "@/layout/MainLayout/MiniHeader";
 import Link from "next/link";
-import ContactForm from "@/components/Home/ContactFormShort";
+import ContactForm from "@/components/Home/ContactForm";
 
 // Define the Community component
 const Community = () => {
@@ -173,8 +173,7 @@ const Community = () => {
             <img
               src={Campus.src}
               alt="Golf Course"
-              className="object-fill"
-              style={{ width: "100%", height: "auto", maxHeight: "450px" }}
+              className="object-fill w-full lg:max-w-[90vw] mx-auto"
             />
           </div>
 

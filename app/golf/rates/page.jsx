@@ -19,7 +19,7 @@ const Rates = () => {
           {/* Golf course information */}
           <div className="border-2 border-[#7DA33F] border-l-0 py-6 mr-8 md:mr-0">
             <div className="px-8 mx-auto text-center lg:w-2/3">
-              <h1 className="text-[#7DA33F] font-bold text-2xl font-DinCondensed text-center">
+              <h1 className="text-[#7DA33F] font-bold text-4xl font-DinCondensed text-center">
                 9 HOLE EXECUTIVE COURSE
               </h1>
               <p className="text-left  my-3 font-primary  font-semibold">
@@ -89,14 +89,14 @@ const Rates = () => {
           />
 
           {/* Information about the driving range */}
-          <div className=" border-4 gap-4  mb-8 border-red-800   lg:max-w-[90vw] ml-8 mr-0  border-r-0 grid place-items-center ">
+          <div className=" border-2 gap-4  mb-8 border-red-800   lg:max-w-[90vw] ml-8 mr-0  border-r-0 grid place-items-center ">
             <div className="p-4">
-              <div className="tracking-wide text-xl font-primary  font-semibold my-3 text-justify">
+              <div className="tracking-wide font-semibold my-3 text-center lg:text-justify">
                 <h1 className="text-maroon font-bold text-4xl font-DinCondensed text-center my-4">
                   DRIVING RANGE
                 </h1>
-                <div className="px-4 lg:px-8 grid grid-cols-2">
-                  <p className="text-left text-lg  my-4 mr-2">
+                <div className="px-4 lg:px-8 grid grid-cols-1 md:grid-cols-2 font-primary">
+                  <p className="text-left  font-primary  font-semibold   my-4 mr-2">
                     Want to perfect your swing? Choose your bucket to practice
                     anytime of day even after sunset with our lighted driving
                     range.
